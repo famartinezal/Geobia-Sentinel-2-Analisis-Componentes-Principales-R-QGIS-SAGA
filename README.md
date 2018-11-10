@@ -21,6 +21,7 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 
 ## <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=5><FONT COLOR=#283747><B>Materiales y métodos</P></B></font></p> 
 
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>En la figura 1 se muestra el esquema general de todo el procedimiento que se llevó a cabo y que se explicará de manera más detallada en adelante.</font></p>  
 
 ![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/pr2.png)
 
