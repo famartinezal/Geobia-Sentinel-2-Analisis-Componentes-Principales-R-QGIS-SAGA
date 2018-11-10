@@ -19,7 +19,7 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Por otro lado la variabilidad espacial y temporal de algunos cultivos como el arroz <I>(Oryza sativa)</I> y particularmente en Colombia dificulta el conocimiento del área cultivada, su distribución y su dinámica. En este país Garcia & Martinez, (2010) realizaron un trabajo previo en la zona de estudio utilizando imágenes Landsat 7 e imágenes ASTER, y consistió identificar y cuantificar áreas en arroz con un enfoque de clasificación basado en píxeles obteniendo una exactitud global del 87.5%, ellos recomiendan el uso de imágenes en diferentes estados fenológicos para caracterizar mejor el comportamiento del cultivo.  Este trabajo pretende evaluar la posibilidad de utilizar la clasificación de imágenes ópticas Sentinel-2 basada en objetos geográficos (por sus siglas en inglés GEOBIA) de manera eficiente con el uso de técnicas de aprendizaje de maquina en la exactitud identificación del estado fenológico de lotes cultivados en arroz <I>(O. sativa)</I>, en los municipios de Saldaña y Purificación departamento del Tolima.</font></p>  
 
-
+## <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=5><FONT COLOR=#283747><B>Materiales y métodos</P></B></font></p> 
 
 
 <TABLE BORDER  width="100%">
