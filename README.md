@@ -22,16 +22,7 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 ## <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=5><FONT COLOR=#283747><B>Materiales y métodos</P></B></font></p> 
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>En la figura 1 se muestra el esquema general de todo el procedimiento que se llevó a cabo y que se explicará de manera más detallada en adelante.</font></p>  
-	
----
-	
-<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4> <I>Figura 1:</I> </font></p> 
-	
-	
-	
-![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/pr2.png)
 
----
 
 ---
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4> <I>Figura 1:</I> </font></p> 
@@ -45,13 +36,7 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>La zona está situada, al sur oriente del departamento del Tolima, desde el municipio de Purificación en el extremo más hacia el sur (3°48'03.48'' N, 75°00'02,40'' O) hasta llegar la desembocadura del río Saldaña en el Magdalena en el municipio de Saldaña (4°00'00.83'' N, 74°52'00,75'' O). El clima predominante es cálido seco con temperaturas entre 28 °C, precipitaciones anuales de 1541 mm. El principal uso de la tierra en esta región es la agricultura, esta zona  comprende las areas pertenecientes al distrito de riego Usosaldaña que tiene un tamaño de unas 14.000 has aproximadamente adecuadas para riego donde el cultivo predominante durante todo el año es el arroz <I>(O. sativa)</I>, sin embargo la zona de estudio corresponde a 23.064 ha ya que se consideran otras coberturas que se allí se encuentran, la figura 2 muestra la ubicación donde se llevó a cabo el presente trabajo. </font></p> 
 
----
-<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4> <I>Figura 2:</I> </font></p> 
 
-![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/zona.png)
-<TABLE BORDER  width="100%">
-
- ---
 
 ### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=4><FONT COLOR=#283747><B>Proyección</P></B></font></p> 
 
@@ -69,6 +54,15 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 Las imágenes utilizadas para este trabajo provienen de una constelación de vigilancia terrestre de dos satélites de la misión Sentinel-2 que forma parte de del programa Copérnico de la Unión Europea para la Agencia Espacial Europea (ESA, por sus siglas en inglés) y proporcionan imágenes ópticas de alta resolución espacial (10 m en el espectro visible e infrarrojo cercano) para el monitoreo de la tierra y está diseñado como una constelación de dos satélites: Sentinel-2A y Sentinel-2B que permiten obtener información de cualquier punto sobre la superficie de la tierra, con una frecuencia de 5 días. Sentinel-2A se lanzó el 23 de junio de 2015 y el Sentinel-2B se lanzó el 7 de marzo de 2017. Cada imagen proporcionada por los satélites tiene una cobertura de 290 km cuadrados.
 Una vez se encontraron la imágenes fue seleccionada la escena correspondiente al tile NWK y NVK en, Nivel 1C, lo que significa que esos productos son orto-imágenes en proyección UTM/WGS84, con mediciones radiométricas por píxel proporcionadas en la reflectancia en el techo de la atmósfera (TOA) del inglés o Top Of the Atmosphere.  
 El pre-procesamiento de datos de la imagen SLC de Nivel 1 se realizó utilizando los métodos de procesamiento estándar de la SNAP Sentinel Application Platform,  se uso el procesador SEN2COR de la ESA para la corrección atmosférica y del terreno de la imagen Sentinel-2A de Nivel Superior de Atmósfera 1C para obtener una imagen de reflectancia a nivel de superficie terrestre (Nivel-2A)(ESA, 2016) . Se realizó un re-muestreo basado en interpolación bilineal a una resolución espacial de 10 × 10 m2 en las bandas 5, 6, 7, 8A, 11 y 12 para lograr la misma resolución en las bandas 2, 3, 4 y 8 y se  remuestreo a una resolución espacial de 10 × 10 m2, adicionalmente se realizó una mascara para extraer la nubes, este procesamiento completo se esquematiza en la figura 2.</A> </font></p> 
+
+---
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4> <I>Figura 2:</I> </font></p> 
+
+![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/zona.png)
+<TABLE BORDER  width="100%">
+
+ ---
+
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
 El algoritmo para la corrección atmosférica que convierte los datos de reflectancia del nivel 1-C (TOA) a nivel 2-A (BOA), se basa en el propuesto en la metodología de corrección atmosférica/topográfica de imagen satelital (ATCOR) de Richter y Schlaepfer (2011). Este estima el “Aerosol Optical Thickness (AOT)” eliminando el vapor de agua contenido y corrigiendo según la superficie del terreno.  El AOT es indicativo de cuán transparente es la atmósfera y se construye mediante la correlación de la reflectancia de las bandas 12 (SWIR), 4 (rojo) y 2 (azul), de acuerdo a lo propuesto por Müller-Wilm, (2016). Complementariamente, corrige la presencia de nubes 2 cirrus en la banda 10.  Finalmente, la reflectancia en superficie (BOA, en inglés) es calculada para las bandas 1 a 12, para un producto de nivel de procesamiento 2-A.</A> </font></p> 
