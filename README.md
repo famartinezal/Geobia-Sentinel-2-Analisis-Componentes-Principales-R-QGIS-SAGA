@@ -13,3 +13,8 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
  
  ---
 
+
+
+
+
+![cp_pra.png](attachment:cp_pra.png)
