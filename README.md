@@ -130,3 +130,6 @@ Posteriormente  se procedió a generar los puntos de entrenamiento y validación
          <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Con presencia de árbloles sin importar si son frutales o bosques</TD>
 		</TR>
 </TABLE>
+
+
+#### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=3><FONT COLOR=#283747><B>Análisis de Componentes principales (ACP)</P></B></font></p> 
