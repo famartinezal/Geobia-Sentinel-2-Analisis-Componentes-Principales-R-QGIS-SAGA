@@ -42,3 +42,82 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 ### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=4><FONT COLOR=#283747><B>Datos</P></B></font></p> 
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Para la búsqueda y selección de las imágenes ópticas se utilizó la plataforma Google Earth Engine, se  cargó una capa que delimitaba la zona estudio, se llamó la colección de Sentinel-2, se realizó un filtro por fecha incluyendo los meses de julio y agosto de 2018, se ordenó la colección en orden descendente por la variable 'CLOUDY_PIXEL_PERCENTAGE' con el fin de obtener la menor cobertura de nubes, posteriormente fue creada una variable que contaba el número de escenas que cumplían con las condiciones, de estas se seleccionaron las correspondientes al 18 de marzo de 2018, se puede acceder al código haciendo clic  <A HREF="https://code.earthengine.google.com/2c6c3dfbb38f33317148c7be3e775df4">aquí</A> posteriormente las imágenes fueron descargadas de la página del <A HREF="https://earthexplorer.usgs.gov/">Servicio Geológico de Estados Unidos (USGS)</A> </font></p> 
+
+
+#### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=3><FONT COLOR=#283747><B>Sentinel 2</P></B></font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
+Las imágenes utilizadas para este trabajo provienen de una constelación de vigilancia terrestre de dos satélites de la misión Sentinel-2 que forma parte de del programa Copérnico de la Unión Europea para la Agencia Espacial Europea (ESA, por sus siglas en inglés) y proporcionan imágenes ópticas de alta resolución espacial (10 m en el espectro visible e infrarrojo cercano) para el monitoreo de la tierra y está diseñado como una constelación de dos satélites: Sentinel-2A y Sentinel-2B que permiten obtener información de cualquier punto sobre la superficie de la tierra, con una frecuencia de 5 días. Sentinel-2A se lanzó el 23 de junio de 2015 y el Sentinel-2B se lanzó el 7 de marzo de 2017. Cada imagen proporcionada por los satélites tiene una cobertura de 290 km cuadrados.
+Una vez se encontraron la imágenes fue seleccionada la escena correspondiente al tile NWK y NVK en, Nivel 1C, lo que significa que esos productos son orto-imágenes en proyección UTM/WGS84, con mediciones radiométricas por píxel proporcionadas en la reflectancia en el techo de la atmósfera (TOA) del inglés o Top Of the Atmosphere.  
+El pre-procesamiento de datos de la imagen SLC de Nivel 1 se realizó utilizando los métodos de procesamiento estándar de la SNAP Sentinel Application Platform,  se uso el procesador SEN2COR de la ESA para la corrección atmosférica y del terreno de la imagen Sentinel-2A de Nivel Superior de Atmósfera 1C para obtener una imagen de reflectancia a nivel de superficie terrestre (Nivel-2A)(ESA, 2016) . Se realizó un re-muestreo basado en interpolación bilineal a una resolución espacial de 10 × 10 m2 en las bandas 5, 6, 7, 8A, 11 y 12 para lograr la misma resolución en las bandas 2, 3, 4 y 8 y se  remuestreo a una resolución espacial de 10 × 10 m2, adicionalmente se realizó una mascara para extraer la nubes, este procesamiento completo se esquematiza en la figura 2.</A> </font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
+El algoritmo para la corrección atmosférica que convierte los datos de reflectancia del nivel 1-C (TOA) a nivel 2-A (BOA), se basa en el propuesto en la metodología de corrección atmosférica/topográfica de imagen satelital (ATCOR) de Richter y Schlaepfer (2011). Este estima el “Aerosol Optical Thickness (AOT)” eliminando el vapor de agua contenido y corrigiendo según la superficie del terreno.  El AOT es indicativo de cuán transparente es la atmósfera y se construye mediante la correlación de la reflectancia de las bandas 12 (SWIR), 4 (rojo) y 2 (azul), de acuerdo a lo propuesto por Müller-Wilm, (2016). Complementariamente, corrige la presencia de nubes 2 cirrus en la banda 10.  Finalmente, la reflectancia en superficie (BOA, en inglés) es calculada para las bandas 1 a 12, para un producto de nivel de procesamiento 2-A.</A> </font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
+Posteriormente  se procedió a generar los puntos de entrenamiento y validación a partir de los datos provenientes de la Encuesta Nacional de Arroz Mecanizado (ENAM) del primer semestre de 2018 con datos de siembra mensual y coordenadas de los lotes muestreados, adicionalmente la información se complementó para adicionar otras coberturas a partir de la observación visular de la composición RGB de la imágen, se tomaron un total de 95 puntos agrupados en 9 clases como se muestra en la tabla 1. </A> </font></p> 
+
+<TABLE BORDER  width="100%">
+   
+<CAPTION ALIGN=top> <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Tabla 1: Información sobre las clases utilizadas.</font></p> </CAPTION>
+	<TR>
+		<TH><p style="text-align: center;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>ID</TH>
+		<TH><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>CLASES</TH>
+        <TH><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3># PUNTOS</TH>
+		<TH><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>OBSERVACIONES</TH>
+    </TR> 
+     <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>1</TD>
+         <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Enero</TD>
+           <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>11</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Siembras en el mes de enero</TD>
+	</TR>
+   <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>2</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Febrero</TD>
+         <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>13</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Siembras en el mes de febrero</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>3</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Inundado</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>12</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Suelos inundados para la fecha de toma de la imágen</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>4</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Húmedo</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>10</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Suelos húmedos para la fecha de toma de la imágen</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>5</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Seco</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>13</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Suelos secos para la fecha de toma de la imágen</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>7</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Urbano</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>8</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Zonas con algún tipo de construcción</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>8</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Matorrales</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>11</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>No hay pastos en el suelo y son comunes los parches de arbustos con hojas pequeñas</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>9</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Malezas</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>9</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Lotes en estado de reposo pero que tienen algún tipo de vegetación</TD>
+	</TR>
+             <TR>
+         <TD><p style="text-align:center;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>10</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Bosque</TD>
+             <TD><p style="text-align:  left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>8</TD>
+         <TD><p style="text-align: left;font-family: times"><FONT COLOR=#283747><FONT SIZE=3>Con presencia de árbloles sin importar si son frutales o bosques</TD>
+		</TR>
+</TABLE>
