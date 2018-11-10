@@ -25,6 +25,11 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 ![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/pr2.png)
 
 
+### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=4><FONT COLOR=#283747><B>Área de estudio:</P></B></font></p> 
+
+
+
+
 
 ![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/zona.png)
 <TABLE BORDER  width="100%">
