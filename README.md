@@ -37,3 +37,6 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
 ### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=4><FONT COLOR=#283747><B>Proyección</P></B></font></p> 
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Las imágenes satelitales utilizadas y el conjunto de datos den entrenamiento y validación fueron referenciados en un sistema de coordenadas proyectado. El sistema de coordenadas geográficas utilizado es el Sistema Geodésico Mundial 84 (WGS 84) y la proyección seleccionada es Universal Transverse Mercator zona 18N (UTM zona 18N). El identificador de la proyección es EPSG 32618. </font></p> 
+    
+
+### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=4><FONT COLOR=#283747><B>Datos</P></B></font></p> 
