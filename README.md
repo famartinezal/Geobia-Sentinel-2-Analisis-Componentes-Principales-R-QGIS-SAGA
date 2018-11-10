@@ -40,3 +40,5 @@ Maestría en Geomática Universidad Nacional de Colombia. </P></EM> <P><EM>
     
 
 ### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=4><FONT COLOR=#283747><B>Datos</P></B></font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Para la búsqueda y selección de las imágenes ópticas se utilizó la plataforma Google Earth Engine, se  cargó una capa que delimitaba la zona estudio, se llamó la colección de Sentinel-2, se realizó un filtro por fecha incluyendo los meses de julio y agosto de 2018, se ordenó la colección en orden descendente por la variable 'CLOUDY_PIXEL_PERCENTAGE' con el fin de obtener la menor cobertura de nubes, posteriormente fue creada una variable que contaba el número de escenas que cumplían con las condiciones, de estas se seleccionaron las correspondientes al 18 de marzo de 2018, se puede acceder al código haciendo clic  <A HREF="https://code.earthengine.google.com/2c6c3dfbb38f33317148c7be3e775df4">aquí</A> posteriormente las imágenes fueron descargadas de la página del <A HREF="https://earthexplorer.usgs.gov/">Servicio Geológico de Estados Unidos (USGS)</A> </font></p> 
