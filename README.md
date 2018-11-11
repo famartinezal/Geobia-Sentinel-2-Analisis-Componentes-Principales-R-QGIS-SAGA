@@ -137,10 +137,6 @@ Posteriormente  se procedió a generar los puntos de entrenamiento y validación
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
 A continuación, en el software R se realizó en Análisis de Componentes Principales (ACP)
-El ACP es una técnica de transformación de datos usada en percepción remota cuando existe una alta correlación entre variables en este caso las bandas, que permite resumir en un número más pequeño, fácil de interpretar y de procesar y que  en conjunto trata explican la mayor parte de la variabilidad (Good et al., 2012). El componente principal número uno representa la proporción máxima de la varianza del stack de las bandas y los componentes siguientes ortogonales a este van representando una proporción de la varianza restante (Zhao y Maclean, 2000; Viscarra Rossel y Chen, 2011), el código utilizado para el ACP se encuentra como un archivo notebook llamado ACP.ipynb en este repositorio sin embargo el siguiente <A HREF="https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/ACP.ipynb">enlace</A> también permite visualizarlo.   
+El ACP es una técnica de transformación de datos usada en percepción remota cuando existe una alta correlación entre variables en este caso las bandas, que permite resumir en un número más pequeño, fácil de interpretar y de procesar y que  en conjunto trata explican la mayor parte de la variabilidad (Good et al., 2012). El componente principal número uno representa la proporción máxima de la varianza del stack de las bandas y los componentes siguientes ortogonales a este van representando una proporción de la varianza restante (Zhao y Maclean, 2000; Viscarra Rossel y Chen, 2011), el código utilizado para el ACP se encuentra como un archivo notebook llamado ACP.ipynb en este repositorio sin embargo el siguiente <A HREF="https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/ACP.ipynb">enlace al código ACP</A> también permite visualizarlo.   
 </A> </font></p> 
 
-
-
-
-<A HREF="https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/ACP.ipynb">enlace</A> 
