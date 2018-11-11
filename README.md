@@ -150,7 +150,7 @@ Para la creación de los segmentos se utilizó el algoritmo de región de crecim
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
     Para realizar el procedimiento se utilizó la versión de SAGA 6.4 siguiendo la siguiente ruta:</A> </font></p> 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Geoprocessing > Imagery > Segmentation > Object Based Image Segmentation</A> </font></p> 
-<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Los parámetros usados para el ancho de banda para la generación de semillas fue de 2.5 y la generalización 1, un ejemplo del resultado se puede obserbar en la figura 3
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Los parámetros usados despúes de realizar varias pruebas fueron para el ancho de banda para la generación de semillas fue de 2.5 y la generalización 1, un ejemplo del resultado se puede obserbar en la figura 3
 
 </A> </font></p> 
 
