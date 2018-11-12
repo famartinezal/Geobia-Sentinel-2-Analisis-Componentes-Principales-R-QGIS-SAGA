@@ -201,5 +201,7 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 
 
 
+<A HREF="https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/clasifica.ipynb">enlace al código de clasificación</A> 
+
 
 
