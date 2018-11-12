@@ -190,3 +190,15 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Vectorial > Herramientas de gestión de datos > Unir atributos por localización </A> </font></p>
 
+
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>El resultado es la capa de buffer con la información extraída de los segmentos que cruzaron esta se guarda como archivo .shp, y luego se exporta a .XLX con el nombre de “train”, asi como se describe a continuación: 
+
+</A> </font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Vectorial > generados dando clic derecho y en exportar > guardar objetos como > en formato se escogió  > “Hoja de cálculo MS Office Open XML [XLSX]” con el nombre de “train.xlsx”</A> </font></p>
+
+
+
+
+
