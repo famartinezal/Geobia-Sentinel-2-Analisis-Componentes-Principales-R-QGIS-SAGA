@@ -200,6 +200,9 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Vectorial > generados dando clic derecho y en exportar > guardar objetos como > en formato se escogió  > “Hoja de cálculo MS Office Open XML [XLSX]” con el nombre de “train.xlsx”</A> </font></p>
 
 
+#### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=3><FONT COLOR=#283747><B>Clasificación</P></B></font></p> 
+
+
 
 <A HREF="https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/clasifica.ipynb">enlace al código de clasificación</A> 
 
