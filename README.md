@@ -131,6 +131,7 @@ Posteriormente  se procedió a generar los puntos de entrenamiento y validación
 		</TR>
 </TABLE>
 
+## <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=5><FONT COLOR=#283747><B>Resultados</P></B></font></p> 
 
 #### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=3><FONT COLOR=#283747><B>Análisis de Componentes principales (ACP)</P></B></font></p> 
 
