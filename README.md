@@ -202,8 +202,6 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 
 #### <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=3><FONT COLOR=#283747><B>Clasificación</P></B></font></p> 
 
-<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>En la capa de entrada se escoge la que contiene los segmentos, luego de realizar este procedimiento se procedió a realizar la unión de atributos por localización siguiendo los pasos que se muestran a continuación:
-
 </A> </font></p>Para realizar la clasificación se utilizó el paquete caret (classification and regression training, <A HREF="http://topepo.github.io/caret/visualizations.html">(Kuhn, 2016)</A>) incluye una serie de funciones que facilitan el uso de decenas de métodos complejos de clasificación y regresión, este es el <A HREF="https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/clasifica.ipynb">enlace al código de clasificación</A> 
 
 
