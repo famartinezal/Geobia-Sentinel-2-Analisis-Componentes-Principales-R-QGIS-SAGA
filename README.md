@@ -176,8 +176,7 @@ Una vez calculada la capa de segmentos se guarda dando clic derecho sobre la mis
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
 A partir de los puntos de entrenamiento y validación se generó una capa buffer circular de 50 metros: </A> </font></p> 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>QGIS Procesos > Geometría vectorial > Buffer</A> </font></p> 
-<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Distancia 50 metros, Segmentos 25 
-
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>En seguida se guardó la información de los atributos generados dando clic derecho y en exportar > guardar objetos como > en formato se escogió  > “Hoja de cálculo MS Office Open XML [XLSX]” con el nombre de “data.xlsx”
 </A> </font></p> 
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
