@@ -214,7 +214,7 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 
 </font></p> 
 
-<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>LDespués en simbología se seleccionó el “símbolo categorizado” y se escogió el campo clases para visualizar el resultado. Por último se calcula en un nuevo campo el área de cada polígono en la calculadora de campos se nombra “área” en números enteros, luego se filtran los objetos más pequeños dando clic derecho sobre las capa de segmentos y se escogieron las áreas inferiores a 2 ha, con estos segmentos seleccionados se fue a   procesos > geometría vectorial > “eliminar polígonos seleccionados” y en combinar la selección con el polígono vecino del área más grande, er resultado se muestra en la figura 4, junto con la imagen en RGB original de la zona.</A> </font></p>
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Después en simbología se seleccionó el “símbolo categorizado” y se escogió el campo clases para visualizar el resultado. Por último se calcula en un nuevo campo el área de cada polígono en la calculadora de campos se nombra “área” en números enteros, luego se filtran los objetos más pequeños dando clic derecho sobre las capa de segmentos y se escogieron las áreas inferiores a 2 ha, con estos segmentos seleccionados se fue a   procesos > geometría vectorial > “eliminar polígonos seleccionados” y en combinar la selección con el polígono vecino del área más grande, er resultado se muestra en la figura 4, junto con la imagen en RGB original de la zona.</A> </font></p>
 
 ---
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4> <I>Figura 4:</I> </font></p> 
@@ -223,3 +223,22 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 ![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/img.png)
  ---
 
+
+## <p style="text-align: left;font-family: georgia,ligth italic;"><FONT SIZE=5><FONT COLOR=#283747><B>Bibliografía </P></B></font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
+Bechtel, B., Ringeler, A., & Böhner, J. (2008). Segmentation for Object Extraction of Treed Using MATLAB and SAGA. Hamburger Beiträge Zur Physischen Geographie Und Landschaftsökologie, 19, 1–12. Retrieved from http://www.uni-hamburg.de/geographie/personal/Mitarbeiter/bechtel/index_/bechtel_et_al_2008.pdf
+ESA, 2016. Sentinel-2 User Handbook. Disponible en https://sentinel.esa.int/documents/247904/685211/ Sentinel-2_User_Handbook .
+Frohn, R. C., and Y. Hao, 2006, “Landscape Metric Performance in Analyzing Two Decades of Deforestation in the Amazon Basin of Rondonia, Brazil,” Remote Sensing of En vironment, 100:237–251.
+Garcia, S., & Martinez, J. (2010). Método para identificación de cultivos de arroz (Oryza sativa L.) con base en imágenes de satélite. Agronomia Colombiana, 28(2)(September), 281–290. Retrieved from https://www.researchgate.net/profile/Joel_Martinez3
+Good, E. J., Kong, X., Embury, O., Merchant, C. J., and J. J. Remedios, 2012, “An Infrared Desert Dust Index for the Along-Track Scanning Radiometers,” Remote Sensing of Environment, 116:159–176.
+Jensen, J. R. (2015). INTRODUCTORY DIGITAL IMAGE PROCESSING A Remote Sensing Perspective. (P. P. HaII, Ed.) (4th Editio).
+Maxwell, A. E., Warner, T. A., & Fang, F. (2018). Implementation of machine-learning classification in remote sensing: an applied review. International Journal of Remote Sensing, 39(9), 2784–2817. https://doi.org/10.1080/01431161.2018.1433343
+Mueller-Wilm, U. 2017, feb. Sen2Cor Software Release Note. Ref. S2-PDGS-MPC-L2A-SRN- V2.3.1.
+[en línea]. Recuperado en: <http://step.esa.int/thirdparties/sen2cor/2.3.1/[L2A- SRN]%20S2-PDGS-MPC-L2A-SRN%20[2.3.1].pdf>. Consultado el: 15 de octubre de 2018.
+Viscarra-Rossel, R. A., and C. Chen, 2011, “Digitally Map- ping the Information Content of Visible-Near Infrared Spectra of Surficial Australian Soils,” Remote Sensing of Environment, 115:1443–1455.
+
+
+Vuolo, F., Żółtak, M., Pipitone, C., Zappa, L., Wenng, H., Immitzer, M., … Atzberger, C. (2016). Data Service Platform for Sentinel-2 Surface Reflectance and Value-Added Products: System Use and Examples. Remote Sensing, 8(11), 938. https://doi.org/10.3390/rs8110938
+Zhao, G., and A. L Maclean, 2000, “A Comparison of Ca- nonical Discriminant Analysis and Principal Component Analysis for Spectral Transformation,” Photogrammetric Engineering & Remote Sensing, 66(7):841–847.
+.</A> </font></p>
