@@ -171,3 +171,12 @@ Una vez calculada la capa de segmentos se guarda dando clic derecho sobre la mis
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Una vez allí en la casilla que dice “capa ráster” se selecciona la capa generada en el análisis ACP, donde dice “banda ráster” se van seleccionando una a una las bandas de la imagen ACP, donde dice capa vectorial que contiene las zonas se coloca la capa con los segmentos generada en SAGA, donde dice prefijo de la columna de salida se colocó cp1_, cp2_, cp3_ y cp4_ según se iba cambiando la banda, es importante resaltar que en realizar este procedimiento para la totalidad de la zona se emplearon aproximadamente 3 minutos.
 
 </A> </font></p> 
+
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
+A partir de los puntos de entrenamiento y validación se generó una capa buffer circular de 50 metros: </A> </font></p> 
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>QGIS Procesos > Geometría vectorial > Buffer</A> </font></p> 
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Distancia 50 metros, Segmentos 25 
+
+</A> </font></p> 
+
