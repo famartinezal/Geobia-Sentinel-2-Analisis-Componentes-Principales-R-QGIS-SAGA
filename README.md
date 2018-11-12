@@ -180,3 +180,14 @@ A partir de los puntos de entrenamiento y validación se generó una capa buffer
 
 </A> </font></p> 
 
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>
+En seguida a la capa buffer resultante se le deben añadir los atributos que coincidan en ubicación con los de la capa de segmentos, sin embargo, para poder realizar este procedimiento primero hay que corregir las geometrías de la última, que se realiza de la siguiente manera: </A> </font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>QGIS Procesos > Geometría vectorial > Corregir geometrías </A> </font></p>
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>En la capa de entrada se escoge la que contiene los segmentos, luego de realizar este procedimiento se procedió a realizar la unión de atributos por localización siguiendo los pasos que se muestran a continuación:
+
+</A> </font></p> 
+
+<p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Vectorial > Herramientas de gestión de datos > Unir atributos por localización </A> </font></p>
+
