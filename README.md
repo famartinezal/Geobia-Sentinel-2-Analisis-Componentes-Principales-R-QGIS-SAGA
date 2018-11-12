@@ -212,14 +212,14 @@ En seguida a la capa buffer resultante se le deben añadir los atributos que coi
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>Luego de realizar la clasificación, se adiciona la tabla que se exportó llamada “clasificación.csv” como capa de texto delimitado a QGIS, allí en la capa de los segmentos se da clic derecho > propiedades > uniones > en el símbolo “+” en la parte inferior derecha selecciona añadir unión vectorial > en el campo unir capa se selecciona la tabla de clasificación > en unir campo se selecciona el identificador “field_1” > campo objetico el id de los segmentos.</A> </font></p>
 
-/A> </font></p> 
+</font></p> 
 
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4>LDespués en simbología se seleccionó el “símbolo categorizado” y se escogió el campo clases para visualizar el resultado. Por último se calcula en un nuevo campo el área de cada polígono en la calculadora de campos se nombra “área” en números enteros, luego se filtran los objetos más pequeños dando clic derecho sobre las capa de segmentos y se escogieron las áreas inferiores a 2 ha, con estos segmentos seleccionados se fue a   procesos > geometría vectorial > “eliminar polígonos seleccionados” y en combinar la selección con el polígono vecino del área más grande, er resultado se muestra en la figura 4, junto con la imagen en RGB original de la zona.</A> </font></p>
 
 ---
 <p style="text-align: justify;font-family: times"><FONT COLOR=#283747><FONT SIZE=4> <I>Figura 4:</I> </font></p> 
 
-![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/pr2.png)
-
+![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/Clasifica.png)
+![alt text](https://github.com/famartinezal/Geobia-Sentinel-2-Analisis-Componentes-Principales-R-QGIS-SAGA/blob/master/img.png)
  ---
 
